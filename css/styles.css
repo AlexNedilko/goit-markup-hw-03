@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 :root {
   --header-bgd-color: #ffffff;
   --footer-bgd-color: #2f303a;
@@ -5,16 +13,37 @@
   --text-color: #757575;
   --link-selection-solor: #2196f3;
 }
-
 body {
   color: var(--text-color);
   font-family: "Roboto", sans-serif;
 }
+.container {
+  width: 1200;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -62,26 +91,33 @@ body {
 }
 
 /* ------------- HERO ----------------- */
-.section-hero-block {
+.section-hero {
+  padding: 200px 0px;
   background-color: var(--footer-bgd-color);
+  text-align: center;
 }
 .hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
 .hero-btn {
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 0px;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
+  /* display: flex; */
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   background: var(--link-selection-solor);
@@ -95,7 +131,13 @@ body {
 }
 
 /* ------------- SPECIIFICITY ----------------- */
+.specificity {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .specificity-title {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -103,14 +145,19 @@ body {
   color: var(--title-color);
 }
 .specificity-text {
+  max-width: 270px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
 /* ------------- WORK & TEAM ----------------- */
+.work {
+  padding-bottom: 94px;
+}
 .work-title,
 .team-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -120,8 +167,12 @@ body {
 }
 
 /* ------------- TEAM ----------------- */
-.team-section {
+.team {
+  padding-top: 94px;
   background-color: #f5f4fa;
+}
+.team-image {
+  margin-bottom: 30px;
 }
 .team-name {
   font-weight: 500;
