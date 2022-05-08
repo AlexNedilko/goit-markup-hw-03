@@ -34,7 +34,6 @@ body {
 .link {
   text-decoration: none;
 }
-
 h1,
 h2,
 h3,
@@ -47,7 +46,6 @@ ul {
   margin-bottom: 0;
   padding: 0;
 }
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -62,6 +60,10 @@ ul {
 }
 
 /* ------------- HEADER ----------------- */
+.header-bar {
+  display: flex;
+  align-items: center;
+}
 .site-logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -72,14 +74,35 @@ ul {
 }
 .header-logo-studio {
   color: #000000;
+  margin-right: 93px;
 }
+.header-list {
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
+}
+.header-contact-list {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-left: auto;
+}
+.header-contact-item + .header-contact-item {
+  margin-left: 50px;
 }
 .header-contact-link {
   font-size: 14px;
