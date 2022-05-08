@@ -19,9 +19,11 @@ body {
 }
 .container {
   width: 1200;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+
   outline: 2px solid tomato;
 }
 .list {
@@ -165,16 +167,33 @@ ul {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
+.work-pic {
+  display: block;
+}
 
 /* ------------- TEAM ----------------- */
 .team {
   padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 .team-image {
-  margin-bottom: 30px;
+  display: block;
 }
+.team-card-text {
+  width: 270px;
+  /* min-height: 368px; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: var(--header-bgd-color);
+  /* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -192,9 +211,12 @@ ul {
 
 /* ------------- FOOTER----------------- */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--footer-bgd-color);
 }
 .footer-list {
+  margin-top: 20px;
   font-style: normal;
 }
 
@@ -223,7 +245,15 @@ ul {
 
 /* ------------- page 2 - PORTFOLIO ----------------- */
 
+.projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.filters-list {
+  margin-bottom: 50px;
+}
 .filters-btn {
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -233,6 +263,7 @@ ul {
   color: var(--title-color);
   background: #f5f4fa;
   border-radius: 4px;
+  border: 0;
 }
 
 .filters-btn:hover,
@@ -245,7 +276,16 @@ ul {
   cursor: pointer;
 }
 
+.projects-card-text {
+  width: 370px;
+  padding: 20px 24px;
+  background-color: var(--header-bgd-color);
+}
+.projects-pic {
+  display: block;
+}
 .projects-item-name {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
