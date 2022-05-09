@@ -18,7 +18,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .container {
-  width: 1200;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -160,6 +160,14 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.specificity-list {
+  display: flex;
+  justify-content: space-between;
+}
+.specificity-item {
+  width: calc((100% - 120px) / 4);
+  /* margin-right: 30px; */
+}
 
 .specificity-title {
   margin-bottom: 10px;
@@ -190,6 +198,12 @@ ul {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
+.work-list {
+  display: flex;
+}
+.work-item:not(:last-child) {
+  margin-right: 30px;
+}
 .work-pic {
   display: block;
 }
@@ -199,6 +213,12 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
+}
+.team-list {
+  display: flex;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 .team-image {
   display: block;
@@ -241,6 +261,12 @@ ul {
 .footer-list {
   margin-top: 20px;
   font-style: normal;
+}
+.footer-item {
+  margin-bottom: 9px;
+}
+.footer-item:last-child {
+  margin-bottom: 0;
 }
 
 .footer-logo-studio {
